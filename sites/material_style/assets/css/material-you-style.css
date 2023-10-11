@@ -9,15 +9,14 @@
   
 }
 
-/* Estilos globais */
 body {
     font-family: 'Open Sans', sans-serif;
     background: var(--cor-de-destaque-claro);
     color: var(--cor-de-destaque-texto);
     transition: background-color 0.3s;
+    padding-bottom: 0;
   }
   
-  /* Estilos do cabeçalho */
   header {
     background-color: var(--cor-de-destaque);
     color: var(--cor-de-destaque-texto);
@@ -38,7 +37,7 @@ body {
 
   .content-box{
     border-radius: 16px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     padding: 14px;
     font-weight: 500;
     background-color: var(--cor-de-destaque-medio-escuro);
@@ -60,10 +59,23 @@ footer{
     display: flex;
     justify-content: center;
     height: 55px;
+    width: 300px;
     margin: 0,0;
     background-color: #4f01bb;
-    padding: 10px;
+    padding: 2px;
     border-radius: 20px;
+    
+}
+#contraste p, input{
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contraste input{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 15px;
 }
 
 a {
@@ -110,4 +122,42 @@ a:hover{
   .button-claro:hover {
     background-color: lighten(var(--cor-de-destaque-medio-escuro, #6200EA), 20%);
   }
+  #cor-de-destaque{
+    width: 40px;
+    height: 40px;
+    background-color: var(--cor-de-destaque-claro);
+    border-radius: 5px;
+    border: 0;
+    box-shadow: black;
+    box-shadow: 3px;
+    padding: 2px;
+  }
     
+  #toTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px;
+    font-size: medium;
+    background-color: #0077ff; /* Cor de fundo */
+    color: var(--cor-de-destaque-texto); /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #toTop a {
+    font-size: medium;
+    color: var(--cor-de-destaque-texto); /* Cor do texto */
+  }
+  #toTop img{
+    align-self: center;
+    rotate: 90deg;
+  }
+  
+  #toTop:hover {
+    background-color: #5737a0; /* Cor de fundo mais escura ao passar o mouse */
+  }

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Exemplo Material You</title>
+    <title>Styles | Material You</title>
     <link rel="stylesheet" type="text/css" href="assets/css/material-you-style.css">
 </head>
 <body>
     <div>
-        <header>
+        <header id="topo">
             <h1>Exemplo Material You</h1>
         </header>
     </div>
@@ -47,7 +47,7 @@
             <!-- Exemplo de Personalização de Cores -->
             <div class="exemplo-personalizacao">
                 <label for="cor-de-destaque">Escolha sua cor de destaque:</label>
-                <input type="color" id="cor-de-destaque" onchange="atualizarCores(this.value)">
+                <input type="color" id="cor-de-destaque" onchange="atualizarCores(this.value)" value="#6200EA">
             </div>
         </section>
     </main>
@@ -65,7 +65,7 @@
             <p>Eu criei o design do site baseado na documentação do <a href="https://m3.material.io/">material.io</a><br>O 'Material Design' e 'Material You' são propriedade da <a href="https://www.google.com">Google</a>.<br></p>
         </div>
     </footer>
-
+    <button id="toTop"><a href="#topo" title="Voltar ao Topo" ><img src="assets/img/arrow2.png" width="30" height="30"></a></button>
     <script>
         function contraste(checked){
             if(!checked){

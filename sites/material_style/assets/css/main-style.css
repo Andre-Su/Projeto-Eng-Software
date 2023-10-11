@@ -47,7 +47,7 @@ body {
     color: #ffdc40;
     font: 100% 'Open Sans', Verdana, sans-serif;
     padding: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 header{
@@ -199,9 +199,9 @@ aside h2 {
 footer{
     color: #1d3d76;
     padding: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
     background-color: #ababac;
-    margin-bottom: 0;
+    bottom: 0;
     border-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -212,8 +212,40 @@ footer h1 {
     margin-bottom: .25em;
     padding-top: .25em;
 }
+footer a {
+    color: #1d3d76;
+}
 
 footer p {
     font-size: .875em;
 }
 
+#toTop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 60px;
+    font-size: medium;
+    background-color: #013450; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #toTop a {
+    font-size: medium;
+    color: #fff; /* Cor do texto */
+
+  }
+
+  #toTop img {
+    align-items: center;
+    rotate: 90deg;
+  }
+  
+  #toTop:hover {
+    background-color: #005d8e; /* Cor de fundo mais escura ao passar o mouse */
+  }
