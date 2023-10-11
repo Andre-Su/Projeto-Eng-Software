@@ -42,6 +42,7 @@ body {
     font-weight: 500;
     background-color: var(--cor-de-destaque-medio-escuro);
     color: var(--cor-de-destaque-texto);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
   }
   
 footer{
@@ -139,7 +140,7 @@ a:hover{
     bottom: 20px;
     width: 70px;
     height: 70px;
-    box-shadow: 5px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
     font-size: medium;
     background-color: #0077ff; /* Cor de fundo */
     color: var(--cor-de-destaque-texto); /* Cor do texto */
@@ -148,6 +149,7 @@ a:hover{
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
   }
   #toTop a {
     font-size: medium;
@@ -159,5 +161,6 @@ a:hover{
   }
   
   #toTop:hover {
-    background-color: #5737a0; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #5737a0;
+    box-shadow: 4px 6px 13px rgba(0, 0, 0, 0.3);
   }
