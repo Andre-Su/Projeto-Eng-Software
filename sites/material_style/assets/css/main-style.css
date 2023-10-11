@@ -43,8 +43,8 @@ table {
 
 body {
     line-height: 1;
-    background-color: #ddb500;
-    color: #1d3d76;
+    background-color: #1d3d76;
+    color: #ffdc40;
     font: 100% 'Open Sans', Verdana, sans-serif;
     padding: 20px;
     padding-bottom: 20px;
@@ -59,7 +59,7 @@ header{
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
-    color: #b74e07;
+    color: #fd6500;
     font-weight: bold;
 }
 
@@ -140,7 +140,7 @@ input[type="submit"]{
 .nav {
     padding: 15px;
     border-radius: 7px;
-    background-color: rgb(80, 133, 202);
+    background-color: rgb(25, 99, 196);
     margin: 20px;
 }
 
@@ -201,7 +201,12 @@ footer{
     padding: 20px;
     padding-bottom: 5px;
     background-color: #ababac;
+    margin-bottom: 0;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
+
 footer h1 {
     font-size: 1em;
     margin-bottom: .25em;
