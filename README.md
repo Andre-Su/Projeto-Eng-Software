@@ -1,3 +1,3 @@
 # Estilos de html
 
-neste repositório, eu estarei estudando estilos de html e linguagem css
+<p>Neste repositório criarei várias páginas com estilos diferentes para criar</p>

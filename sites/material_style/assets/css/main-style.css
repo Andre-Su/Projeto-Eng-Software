@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/*
+ Aqui começa o CSS
+*/
+
+/* CSS RESET
+http://meyerweb.com/eric/tools/css/reset/
+Licença: nenhuma (domínio público)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Redefinição da função de exibição HTML5 para navegadores antigos */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+    content: " ";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* GERAL
+---------------------------------------------------*/
+
+body {
+    line-height: 1;
+    background-color: #ddb500;
+    color: #1d3d76;
+    font: 100% 'Open Sans', Verdana, sans-serif;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+header{
+    margin: 0;
+    width: auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f3cfb6;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+    color: #b74e07;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: .75em;
+}
+
+h2 {
+    font-size: 1.37em;
+}
+
+
+p {
+    margin: 0 0 .5em;
+    padding-right: 10px;
+}
+
+/* Estado dos links*/
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(252, 187, 68);
+}
+a:hover{
+    color: yellow;
+}
+  
+.nav a:hover {
+    text-decoration: none;
+}
+
+a.current {
+    color: #1d3d76;
+}
+
+a:hover.current{
+    background: white;
+    cursor: default;
+}
+
+/* Contém os floats */
+
+.clearfix::before, .clearfix::after { content: ""; display: table; } 
+.clearfix::after{ clear: both;} 
+.clearfix{zoom: 1;}
+
+
+/* MASTERHEAD - CABEÇALHO PRINCIPAL
+-------------------------------------------------*/
+
+
+#masterhead{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px dotted #1d3d76;
+}
+
+input, label, .entry .date, .continued, .sidebar p, .archive ol {
+    font-size: 0.75em;
+}
+
+
+input[type="text"] {
+    width: 150px;
+    padding: 2px 3px;
+}
+
+
+input[type="submit"]{
+    vertical-align: top;
+}
+
+/* Nav do Site */
+
+
+.nav {
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgb(80, 133, 202);
+    margin: 20px;
+}
+
+.nav li {
+    list-style-type:none;
+    font-size: 0.75em;
+    padding: 4px 25px 4px 3px;
+}
+
+.nav li a {
+    font-size: 1.5em;
+}
+
+
+.nav li:first-child {
+    padding-left: 0;
+}
+
+.nav li:last-child {
+    padding-right: 0;
+}
+
+
+/* SIDEBAR
+-----------------------------------------------------*/
+
+
+.sidebar {
+    background: #f5f8fa;
+    padding: 10px;
+}
+
+aside h2 {
+    font-size: .9375em;
+    text-transform: lowercase;
+    margin-bottom: 3px;
+}
+
+.feature {
+    font-style: italic;
+}
+
+/* Arquivo */
+.archive ol {
+    list-style: disc;/* altera marcadores de números para marcadores circulares */
+    padding-left: 10px; /* recua os marcadores */
+}
+
+
+.archive .continued {
+    margin-top: 0;
+}
+
+/* FOOTER 
+----------------------------------------*/
+footer{
+    color: #1d3d76;
+    padding: 20px;
+    padding-bottom: 5px;
+    background-color: #ababac;
+}
+footer h1 {
+    font-size: 1em;
+    margin-bottom: .25em;
+    padding-top: .25em;
+}
+
+footer p {
+    font-size: .875em;
+}
+

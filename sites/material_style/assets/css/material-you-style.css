@@ -1,0 +1,113 @@
+:root {
+    --cor-de-destaque: #6200EA; /* Define a cor de destaque base */
+    --cor-de-destaque-escuro: #2a0188; /* Tom mais escuro */
+    --cor-de-destaque-medio-escuro: #3700B3;
+    --cor-de-destaque-claro: #94a3f8; /* Tom mais claro */
+    --cor-de-destaque-medio-claro: #647bfa;
+    --cor-de-destaque-texto: #ffffff;
+    
+  
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--cor-de-destaque-claro);
+    color: var(--cor-de-destaque-texto);
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: var(--cor-de-destaque);
+    color: var(--cor-de-destaque-texto);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #main-container{
+    padding: 8px;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: var(--cor-de-destaque-medio-claro);
+    color: var(--cor-de-destaque-texto);
+    
+  }
+
+  .content-box{
+    border-radius: 16px;
+    margin-bottom: 3px;
+    padding: 14px;
+    font-weight: 500;
+    background-color: var(--cor-de-destaque-medio-escuro);
+    color: var(--cor-de-destaque-texto);
+  }
+  
+footer{
+    background-color: #2a0188;
+    align-self: auto;
+    color: beige;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#contraste{
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    margin: 0,0;
+    background-color: #4f01bb;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(252, 187, 68);
+}
+a:hover{
+    color: yellow;
+}
+  
+  /* Estilos do botão base com a cor de destaque */
+  button {
+    background-color: var(--cor-de-destaque-escuro);
+    font-size: .88em;
+    font-weight: 600;
+    color: var(--cor-de-destaque-texto);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+  }
+  
+  /* Estilos do botão com tom mais escuro */
+  .button-escuro {
+    box-shadow: 2px;
+
+    background-color: var(--cor-de-destaque-escuro);
+  }
+  
+  /* Estilos do botão com tom mais claro */
+  .button-claro {
+    background-color: var(--cor-de-destaque-claro);
+  }
+  
+  /* Pseudo-classe para hover em botões escuros */
+  .button-escuro:hover {
+    background-color: var(--cor-de-destaque-medio-claro);
+  }
+  
+  /* Pseudo-classe para hover em botões claros */
+  .button-claro:hover {
+    background-color: lighten(var(--cor-de-destaque-medio-escuro, #6200EA), 20%);
+  }
+    

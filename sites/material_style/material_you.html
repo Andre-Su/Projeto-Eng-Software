@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exemplo Material You</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/material-you-style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Exemplo Material You</h1>
+        </header>
+    </div>
+<div id="main-container">
+    <main>
+        <section class="content-box">
+            <h2>O que é o Material You?</h2>
+            <p>O Material You é uma evolução do Material Design introduzida com o Android 12. Ele permite personalizar dinamicamente a aparência da interface do usuário com base nas preferências do usuário, incluindo a escolha de cores de destaque.</p>
+        </section>
+
+        <section class="content-box">
+            <h2>Personalização de Cores</h2>
+            <p>Com o Material You, os usuários podem escolher uma cor de destaque que reflete sua preferência pessoal. Essa cor é então aplicada consistentemente em todo o sistema e em aplicativos compatíveis. Essa personalização cria uma experiência visual única e mais envolvente para o usuário.</p>
+        </section>
+
+        <section class="content-box">
+            <h2>Adaptação Dinâmica</h2>
+            <p>Uma das características marcantes do Material You é a adaptação dinâmica da interface do usuário. O sistema utiliza a cor de destaque escolhida pelo usuário para modificar a aparência de elementos, como botões, barras de navegação, ícones e outros componentes de acordo com a preferência de cores do usuário. Isso cria uma experiência altamente personalizada e visualmente agradável.</p>
+            <button class="button-escuro">Botão para teste</button>
+        </section>
+
+        <section class="content-box">
+            <h2>Integração de Widgets e Papéis de Parede</h2>
+            <p>Além da personalização das cores, o Material You também integra a cor de destaque escolhida pelos usuários em widgets e papéis de parede. Isso significa que os widgets, ícones e outros elementos interativos podem combinar perfeitamente com a cor de destaque, criando uma experiência visualmente coesa em todo o sistema.</p>
+        </section>
+
+        <section class="content-box">
+            <h2>Compatibilidade Multiplataforma</h2>
+            <p>Embora tenha sido introduzido no Android 12, os princípios do Material You podem ser aplicados a várias plataformas, incluindo desenvolvimento web e aplicativos para outras plataformas móveis. Isso significa que você pode criar uma experiência de usuário consistente em diferentes dispositivos e ambientes.</p>
+        </section>
+        <section class="content-box">
+            <h2>Exemplo de Personalização</h2>
+            <p>Experimente a personalização de cores do Material You:</p>
+            
+            <!-- Exemplo de Personalização de Cores -->
+            <div class="exemplo-personalizacao">
+                <label for="cor-de-destaque">Escolha sua cor de destaque:</label>
+                <input type="color" id="cor-de-destaque" onchange="atualizarCores(this.value)">
+            </div>
+        </section>
+    </main>
+</div>
+    <footer>
+        <div>
+            <p>- Página de Exemplo do Material You M3 -</p>
+            <p>Criado por <a title="Minha página no GitHub" href="https://github.com/Andre-Su">Andre-Su</a>, 2023</p>
+            <p>Base de estilos utilizada para estudos, sem fins lucrativos.</p>
+            <p><small><a href="https://github.com/Andre-Su/html-styles" title="Código Fonte">Source Code</a></small></p>
+            <div id="contraste">
+                <p>problemas com contraste?</p>
+                <input type="checkbox" onchange="contraste(this.checked)">
+            </div>
+            <p>Eu criei o design do site baseado na documentação do <a href="https://m3.material.io/">material.io</a><br>O 'Material Design' e 'Material You' são propriedade da <a href="https://www.google.com">Google</a>.<br></p>
+        </div>
+    </footer>
+
+    <script>
+        function contraste(checked){
+            if(!checked){
+                document.body.style.setProperty('--cor-de-destaque-texto', 'white');
+            } else{
+                document.body.style.setProperty('--cor-de-destaque-texto', 'black');
+            }
+        }
+        function atualizarCores(corDeDestaque) {
+            document.documentElement.style.setProperty('--cor-de-destaque', corDeDestaque);
+
+            // Ajustar as variáveis de tons mais escuros e claros com base na cor de destaque
+            var escuro = adjustColor(corDeDestaque, -70);
+            var claro = adjustColor(corDeDestaque, 70);
+            var meioEscuro = adjustColor(corDeDestaque, -40);
+            var meioClaro = adjustColor(corDeDestaque, 40);
+            
+            document.body.style.setProperty('--cor-de-destaque-escuro', escuro);
+            document.body.style.setProperty('--cor-de-destaque-claro', claro);
+            document.body.style.setProperty('--cor-de-destaque-medio-escuro', meioEscuro);
+            document.body.style.setProperty('--cor-de-destaque-medio-claro', meioClaro);
+        }
+        // Função para ajustar a cor
+        function adjustColor(color, percentage) {
+            return '#' + color.match(/\w\w/g).map(function (c) {
+                return Math.min(255, Math.max(0, parseInt(c, 16) + percentage)).toString(16);
+            }).join('');
+        }
+    </script>
+</body>
+</html>
